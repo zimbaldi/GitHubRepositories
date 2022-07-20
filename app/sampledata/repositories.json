@@ -1,0 +1,102 @@
+{
+  "data": [
+    {
+      "id": 499179311,
+      "name": "App-Extrato-Bancario-DIO-StanderDevWeek",
+      "owner": {
+        "login": "zimbaldi",
+        "avatar_url": "https://avatars.githubusercontent.com/u/104802293?v=4"
+      },
+      "stargazers_count": 0,
+      "language": "Kotlin",
+      "html_url": "https://github.com/zimbaldi/App-Extrato-Bancario-DIO-StanderDevWeek",
+      "description": "Aplicativo feito em Kotlin na Santander DEV Week 2022 que consome os valores de Receitas e Despesas gerados atraves de uma API Java "
+    },
+    {
+      "id": 488364334,
+      "name": "bankline-api",
+      "owner": {
+        "login": "zimbaldi",
+        "avatar_url": "https://avatars.githubusercontent.com/u/104802293?v=4"
+      },
+      "stargazers_count": 0,
+      "language": "Java",
+      "html_url": "https://github.com/zimbaldi/bankline-api",
+      "description": "API Java para gerar receitas e despesas bancárias a ser utilizada no desenvolvimento de app mobile em Kotlin no Santander Dev Week 2022"
+    },
+    {
+      "id": 511430605,
+      "name": "Business-card",
+      "owner": {
+        "login": "zimbaldi",
+        "avatar_url": "https://avatars.githubusercontent.com/u/104802293?v=4"
+      },
+      "html_url": "https://github.com/zimbaldi/Business-card",
+      "description":  "App de cartões de visita em Kotlin",
+      "stargazers_count": 0,
+      "language": "Kotlin"
+    },
+    {
+      "id": 499165969,
+      "name": "dio-desafio-git-e-github",
+      "owner": {
+        "login": "zimbaldi",
+        "id": 104802293,
+        "node_id": "U_kgDOBj8n9Q",
+        "avatar_url": "https://avatars.githubusercontent.com/u/104802293?v=4"
+      },
+      "stargazers_count": 0,
+      "language": null,
+      "html_url": "https://github.com/zimbaldi/dio-desafio-git-e-github",
+      "description": "Primeiro desafio de Projeto sobre Git e Github do Santander Mobile Bootcamp"
+    },
+    {
+      "id": 503137750,
+      "name": "matches-simulator-api",
+      "owner": {
+        "login": "zimbaldi",
+        "avatar_url": "https://avatars.githubusercontent.com/u/104802293?v=4"
+      },
+      "stargazers_count": 0,
+      "language": "API",
+      "html_url": "https://github.com/zimbaldi/matches-simulator-api",
+      "description": "Repositório que simula uma API REST para obtenção de partidas."
+    },
+    {
+      "id": 508917498,
+      "name": "Soccer-news-api",
+      "owner": {
+        "login": "zimbaldi",
+        "avatar_url": "https://avatars.githubusercontent.com/u/104802293?v=4"
+      },
+      "stargazers_count": 0,
+      "language": "API",
+      "html_url": "https://github.com/zimbaldi/Soccer-news-api",
+      "description": "API (provida via GitHub Pages) do App \"Soccer News\""
+    },
+    {
+      "id": 508044298,
+      "name": "Soccer-news-app",
+      "owner": {
+        "login": "zimbaldi",
+        "avatar_url": "https://avatars.githubusercontent.com/u/104802293?v=4"
+      },
+      "stargazers_count": 0,
+      "language": "Java",
+      "html_url": "https://github.com/zimbaldi/Soccer-news-app",
+      "description": "Desafio de projeto do Santander Mobile Bootcamp - App Nativo Sobre Futebol Feminino com Android Jetpack e Java"
+    },
+    {
+      "id": 488023405,
+      "name": "zimbaldi",
+      "owner": {
+        "login": "zimbaldi",
+        "avatar_url": "https://avatars.githubusercontent.com/u/104802293?v=4"
+      },
+      "stargazers_count": 0,
+      "language": null,
+      "html_url": "https://github.com/zimbaldi/zimbaldi",
+      "description": "My GitHub profile."
+    }
+  ]
+}
