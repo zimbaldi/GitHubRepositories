@@ -2,7 +2,7 @@
   "data": [
     {
       "id": 499179311,
-      "name": "App-Extrato-Bancario-DIO-StanderDevWeek",
+      "name": "App-Extrato-Bancario-StanderDevWeek",
       "owner": {
         "login": "zimbaldi",
         "avatar_url": "https://avatars.githubusercontent.com/u/104802293?v=4"
@@ -46,7 +46,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/104802293?v=4"
       },
       "stargazers_count": 0,
-      "language": null,
+      "language": "Nenhuma",
       "html_url": "https://github.com/zimbaldi/dio-desafio-git-e-github",
       "description": "Primeiro desafio de Projeto sobre Git e Github do Santander Mobile Bootcamp"
     },
@@ -94,7 +94,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/104802293?v=4"
       },
       "stargazers_count": 0,
-      "language": null,
+      "language": "Nenhuma",
       "html_url": "https://github.com/zimbaldi/zimbaldi",
       "description": "My GitHub profile."
     }
