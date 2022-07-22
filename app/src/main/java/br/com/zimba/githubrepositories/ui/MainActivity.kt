@@ -1,16 +1,23 @@
 package br.com.zimba.githubrepositories.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import br.com.zimba.githubrepositories.R
-import br.com.zimba.githubrepositories.databinding.ActivityMainBinding
-import androidx.appcompat.widget.SearchView
 import android.util.Log
 import android.view.Menu
-import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.SearchView
+import br.com.zimba.githubrepositories.R
+import br.com.zimba.githubrepositories.core.createDialog
+import br.com.zimba.githubrepositories.core.createProgressDialog
+import br.com.zimba.githubrepositories.core.hideSoftKeyboard
+import br.com.zimba.githubrepositories.databinding.ActivityMainBinding
+import br.com.zimba.githubrepositories.presentation.MainViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
 
+    private val dialog by lazy { createProgressDialog() }
+    private val viewModel by viewModel<MainViewModel>()
+    private val adapter by lazy { RepoListAdapter() }
     private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +25,24 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
+        binding.rvRepos.adapter = adapter
+
+        viewModel.getRepoList("zimbaldi")
+        viewModel.repos.observe(this) {
+            when (it) {
+                MainViewModel.State.Loading -> dialog.show()
+                is MainViewModel.State.Error -> {
+                    createDialog {
+                        setMessage(it.error.message)
+                    }.show()
+                    dialog.dismiss()
+                }
+                is MainViewModel.State.Success -> {
+                    dialog.dismiss()
+                    adapter.submitList(it.list)
+                }
+            }
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -28,7 +53,9 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
     }
 
     override fun onQueryTextSubmit(query: String?): Boolean {
-        TODO("Not yet implemented")
+        query?.let { viewModel.getRepoList(it) }
+        binding.root.hideSoftKeyboard()
+        return true
     }
 
     override fun onQueryTextChange(newText: String?): Boolean {
@@ -39,6 +66,4 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
     companion object {
         private const val TAG = "TAG"
     }
-
-
 }

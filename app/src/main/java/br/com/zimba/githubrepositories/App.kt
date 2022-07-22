@@ -3,6 +3,7 @@ package br.com.zimba.githubrepositories
 import android.app.Application
 import br.com.zimba.githubrepositories.data.di.DataModule
 import br.com.zimba.githubrepositories.domain.di.DomainModule
+import br.com.zimba.githubrepositories.presentation.di.PresentationModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -17,5 +18,6 @@ class App : Application() {
 
         DataModule.load()
         DomainModule.load()
+        PresentationModule.load()
     }
 }
